@@ -21,9 +21,18 @@ class Wage_Calculator {
 	public int total_wage;
 	void calculate() {
 		total_wage=wage*hours;
-		System.out.println(total_wage);
+		System.out.println("Total wages is " + total_wage);
 	}
 	
+}
+class Part_time_wage {
+	public final int parttimehours = 4;
+	public final int wage1=20;
+	public int parttimesal;
+	public void part_time_wage() {
+		parttimesal=wage1*parttimehours;
+		System.out.println("Part time wages is " + parttimesal);
+	}
 }
 public class Day5Assignment {
 	public static void main(String[] args) {
@@ -34,6 +43,8 @@ public class Day5Assignment {
 		obj1.check();
 		Wage_Calculator obj2 = new Wage_Calculator();
 		obj2.calculate();
+		Part_time_wage obj3 = new Part_time_wage();
+		obj3.part_time_wage();
 	}
 
 }
