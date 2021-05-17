@@ -15,6 +15,16 @@ class Absent_Present {
 		}
 	}
 }
+class Wage_Calculator {
+	public final int wage = 20;
+	public final int hours = 8;
+	public int total_wage;
+	void calculate() {
+		total_wage=wage*hours;
+		System.out.println(total_wage);
+	}
+	
+}
 public class Day5Assignment {
 	public static void main(String[] args) {
 		
@@ -22,6 +32,8 @@ public class Day5Assignment {
 		obj.display();
 		Absent_Present obj1 = new Absent_Present();
 		obj1.check();
+		Wage_Calculator obj2 = new Wage_Calculator();
+		obj2.calculate();
 	}
 
 }
