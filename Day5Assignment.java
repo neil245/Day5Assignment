@@ -62,10 +62,24 @@ class Switch {
 	System.out.println("Invalid output");
 	break;
 	
-	
-	
+	}
+  }
 }
+class While_Condition {
+	 int hours = 0;
+	 int days = 0;
+	 int wage = 20;
+	 int total_salary;
+	 void compute() {
+	while (hours <= 100 && days <= 20)
+	{
+		total_salary = wage*hours*days;
+		System.out.println(total_salary);
+		hours ++;
+		days ++;
+	}
 }
+	 
 }
 
 public class Day5Assignment {
@@ -79,8 +93,10 @@ public class Day5Assignment {
 		//obj2.calculate();
 		//Part_time_wage obj3 = new Part_time_wage();
 		//obj3.part_time_wage();
-		Switch obj4 = new Switch();
-		obj4.choice();
+		//Switch obj4 = new Switch();
+		//obj4.choice();
+		While_Condition obj5 = new While_Condition();
+        obj5.compute();		
 	}
 
 }
