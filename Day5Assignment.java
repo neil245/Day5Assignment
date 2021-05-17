@@ -54,7 +54,9 @@ class Switch {
 	case 2:
 		System.out.println("Employee is full time present");
 		int total_salary = sal*hours;
+		int monthly_salary=sal*hours*20;
 		System.out.println(total_salary);
+		System.out.println("Monthy Salary is : " + monthly_salary);
 	break;
 	default:
 	System.out.println("Invalid output");
